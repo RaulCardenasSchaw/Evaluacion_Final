@@ -29,17 +29,13 @@ body {
     text-align: right;
     vertical-align: top;
 }
-
-footer {
-    clear: both;
-    width: 100%;
-    height: 10vh;
-    border-radius: 0px 0px 10px 10px;
-    margin-top: 0.5vh;
-    background-color: #C6d5c5;
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 12px;
+a:hover {
+     color: orange;
+}
+a:link {
+     text-decoration:none;
+     font-weight: bold;
+     color:blue;
 }
 
 .ImagenCentral {
@@ -48,17 +44,19 @@ footer {
     margin-left: 25%;
     width: 50%;
     text-align: center;
+    border: 1px solid black;
 }
 
 .ImagenCentral img {
-     margin: 2%;
+    margin: 2%;
     width: 96%;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 .ImagenSecundaria {
-     width: 96%;
-     height: 100%;
+    width: 96%;
+    height: 100%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
@@ -72,57 +70,70 @@ footer {
     width: 50%;
     margin: 5vh 0;
     border: 1px solid black;
+    text-align: center;
+    background-color: #82c3a6;
 }
 
 .ImagenSecundaria1 {
-    background-color: red;
     margin: 2%;
-    color: #333;
+    height: inherit;
+    border-radius: 10px;
 }
 
 .ImagenSecundaria2 {
-margin: 2%;
-    background-color: blue;
-    color: #333;
+    margin: 2%;
+    height: inherit;
+    border-radius: 10px;
 }
 
-.ImagenSecundaria1 img {}
-
-.ImagenSecundaria2 img {}
-
-.PiePagina ul li {
-    list-style-type: none;
-    float: left;
-    padding: 0vh;
+.ImagenSecundaria1 img {
+    margin: 2%;
+    width: 96%;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.ImagenSecundaria {
-    background-color: #d5c75f;
+.ImagenSecundaria2 img {
+    margin: 2%;
+    width: 96%;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.columna1 {
-    width: 25%;
+.PiePagina footer {
+    clear: both;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0.5vh;
+    background-color: #C6d5c5;
+    font-size: 1vw;
+    bottom: 0;
+    display: inline-flex;
+    flex-flow: row;
 }
 
-.columna2 {
-    width: 25%;
+.PiePagina p {
+font-style: oblique;
+font-weight: bold;
 }
 
-.columna3 {
-    width: 25%;
+.PiePaginaCol1 {
+    width: 40%;
+    border-width: thick;
+    border-color: black;
+    vertical-align: middle;
+
 }
 
-.columna4 {
-    width: 25%;
+.PiePaginaCol2, .PiePaginaCol3, .PiePaginaCol4 {
+    width: 20%;
+    border-width: thin;
+    border-color: black;
+    vertical-align: middle;
 }
 
 
-/*
-@media all and ((min-width: 900px) {
-}*/
+/*@media all and ((min-width: 900px) {}*/
 
-@media all and (max-width: 900px) {
-    /*.Cabecera header {
-         font-size: 3vw;
-     }*/
-}
+
+/*@media all and (max-width: 900px) {}*/
