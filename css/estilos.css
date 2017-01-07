@@ -1,12 +1,19 @@
+/* ********************************************************************* */
+/*  Controles Generales para la Página - Body                            */
+/* ********************************************************************* */
 body {
     font-family: Dancing Script;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #5b7989;
 }
 
-.Contenedor {
+.Contenido {
     width: 100%;
-    background-color: yellow;
 }
-
+/* ********************************************************************* */
+/*  Controles para el Encabezado de la Página - header                   */
+/* ********************************************************************* */
 .Cabecera {
     width: 100%;
     color: white;
@@ -24,20 +31,29 @@ body {
 
 .Cabecera nav {
     margin-right: 2%;
-    color: white;
     font-size: 2.5vw;
     text-align: right;
     vertical-align: top;
-}
-a:hover {
-     color: orange;
-}
-a:link {
-     text-decoration:none;
-     font-weight: bold;
-     color:blue;
+    text-decoration: none;
 }
 
+.Cabecera a:hover {
+    color: orange;
+}
+
+.Cabecera a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+
+/* ********************************************************************* */
+/*  Controles para el Cuerpo o Contenido de la Página                    */
+/* ********************************************************************* */
+
+/* --------------------------------------------------------------------- */
+/*  Sección para la Imagen Central de la Página                          */
+/* --------------------------------------------------------------------- */
 .ImagenCentral {
     background-color: #82c3a6;
     border-radius: 10px;
@@ -45,6 +61,7 @@ a:link {
     width: 50%;
     text-align: center;
     border: 1px solid black;
+    font-size: 2vw;
 }
 
 .ImagenCentral img {
@@ -52,8 +69,12 @@ a:link {
     width: 96%;
     border-radius: 10px;
     border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
 }
 
+/* --------------------------------------------------------------------- */
+/*  Sección para las Imagenes Secundarias de la Página                   */
+/* --------------------------------------------------------------------- */
 .ImagenSecundaria {
     width: 96%;
     height: 100%;
@@ -63,15 +84,16 @@ a:link {
     margin-bottom: 2%;
     display: inline-flex;
     flex-flow: row;
+    font-size: 2vw;
 }
 
 .ImagenSecundaria1, .ImagenSecundaria2 {
+    background-color: #d5c75f;
     display: inline-block;
     width: 50%;
     margin: 5vh 0;
-    border: 1px solid black;
+    border: 2px solid;
     text-align: center;
-    background-color: #82c3a6;
 }
 
 .ImagenSecundaria1 {
@@ -91,6 +113,11 @@ a:link {
     width: 96%;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+.ImagenSecundaria1 img:hover {
+    transform: rotate(10deg);
 }
 
 .ImagenSecundaria2 img {
@@ -98,42 +125,120 @@ a:link {
     width: 96%;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 2px 2px 2px #02010a;
 }
 
+.ImagenSecundaria2 img:hover {
+    transform: translate(5px, -20px);
+}
+/* ********************************************************************* */
+/*  Controles para el Pie de Página - Footer                             */
+/* ********************************************************************* */
+.PiePagina {
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 0.6em;
+    font-style: oblique;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row wrap;
+}
 .PiePagina footer {
     clear: both;
-    width: 100%;
-    border-radius: 0px 0px 10px 10px;
     margin-top: 0.5vh;
-    background-color: #C6d5c5;
-    font-size: 1vw;
     bottom: 0;
-    display: inline-flex;
-    flex-flow: row;
+    text-align: center;
+}
+.PiePagina a:hover {
+    color: red;
 }
 
-.PiePagina p {
-font-style: oblique;
-font-weight: bold;
-}
-
-.PiePaginaCol1 {
+/* --------------------------------------------------------------------- */
+/*  Sección para Controlar las Columnas del Pie de Página                */
+/* --------------------------------------------------------------------- */
+.PiePag1 {
+    background-color: red;
+    min-height: inherit;
     width: 40%;
-    border-width: thick;
-    border-color: black;
-    vertical-align: middle;
-
+    border-radius: 0px 0px 0px 10px;
 }
 
-.PiePaginaCol2, .PiePaginaCol3, .PiePaginaCol4 {
+.PiePag2 {
+    background-color: grey;
+    min-height: inherit;
     width: 20%;
-    border-width: thin;
-    border-color: black;
-    vertical-align: middle;
+}
+
+.PiePag3 {
+    background-color: orange;
+    min-height: inherit;
+    width: 20%;
+}
+
+.PiePag4 {
+    background-color: yellow;
+    min-height: inherit;
+    width: 20%;
+    border-radius: 0px 0px 10px 0px;
 }
 
 
-/*@media all and ((min-width: 900px) {}*/
+/* ********************************************************************* */
+/*  Controles para ajustar la apariencia para Équipos de menos de 900px  */
+/* ********************************************************************* */
+/* @media screen (min-device-width: 320px) and (max-width: 900px)  */
+@media (min-width: 480px) and (max-width: 900px) 	
+{	
+	body {
+	    background-color: blue;
+	}
+    .contenedor {
+		font-size: 1.5em;
+    }
+	.PiePagina {
+		width: 100%;
+	}
+    .PiePag1 {
+		width: 100%;
+		border-radius: 0px;
+    }
+    .PiePag2 {
+		width: 100%;
+    }
+    .PiePag3 {
+		width: 100%;
+    }
+    .PiePag4 {
+		width: 100%;
+	border-radius: 0px 0px 10px 10px;
+    }
+}
 
 
-/*@media all and (max-width: 900px) {}*/
+/*@media screen and (min-width: 480px) {
+    .PiePagina {
+        flex-flow: row wrap;
+        background-color: red;
+        width: 100%;
+        font-size: 0.6em;
+    }
+    .PiePaginaCol1, .PiePaginaCol2, .PiePaginaCol3, .PiePaginaCol4 {
+        font-size: .6em;
+    }
+}*/
+
+/*@media screen and (min-width: 960px) {
+    .PiePagina {
+         display: flex;
+        flex-flow:  column wrap;
+        background-color: blue;
+        width: 100%;
+        font-size: 0.6em;
+    }
+    .PiePaginaCol1, .PiePaginaCol2, .PiePaginaCol3, .PiePaginaCol4 {
+        font-size: .6em;
+        width: 25%;
+    }
+}*/
