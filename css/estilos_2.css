@@ -1,6 +1,7 @@
-/* ********************************************************************* */
-/*  Controles Generales para la Página - Body                                                               */
-/* ********************************************************************* */
+/**********************************************************************
+Controles Generales para la Página - Body
+**********************************************************************/
+
 body {
     font-family: Dancing Script;
     border: 2px solid black;
@@ -11,16 +12,12 @@ body {
 .Contenido {
     width: 100%;
 }
-/* ********************************************************************* */
-/* ********************************************************************* */
-/*  Controles para el Encabezado de la Página Principal                                                 */
-/* ********************************************************************* */
-/* ********************************************************************* */
 
 
-/* ********************************************************************* */
-/*  Controles para el Encabezado de la Página - header                                                 */
-/* ********************************************************************* */
+/**********************************************************************
+Controles para el Encabezado de la Página - Header
+**********************************************************************/
+
 .Cabecera {
     width: 100%;
     color: white;
@@ -28,12 +25,14 @@ body {
     border-radius: 10px 10px 0px 0px;
     height: 5%;
 }
+
 .Cabecera header {
     margin-left: 2%;
     width: 100%;
     font-size: 5vw;
     text-shadow: 2px 2px #02010a;
 }
+
 .Cabecera nav {
     margin-right: 2%;
     font-size: 2.5vw;
@@ -41,22 +40,27 @@ body {
     vertical-align: top;
     text-decoration: none;
 }
+
 .Cabecera a:hover {
     color: orange;
 }
+
 .Cabecera a:link {
     text-decoration: none;
     font-weight: bold;
     color: green;
 }
 
-/* ********************************************************************* */
-/*  Controles para el Cuerpo o Contenido de la Página                                                   */
-/* ********************************************************************* */
 
-/* --------------------------------------------------------------------- */
-/*  Sección para la Imagen Central de la Página                          */
-/* --------------------------------------------------------------------- */
+/**********************************************************************
+Controles para el Cuerpo o Contenido de la Página
+**********************************************************************/
+
+
+/*---------------------------------------------------------------------
+Sección para la Imagen Central de la Página
+---------------------------------------------------------------------*/
+
 .ImagenCentral {
     background-color: #82c3a6;
     border-radius: 10px;
@@ -66,6 +70,7 @@ body {
     border: 1px solid black;
     font-size: 2vw;
 }
+
 .ImagenCentral img {
     margin: 2%;
     width: 96%;
@@ -73,9 +78,12 @@ body {
     border: 1px solid black;
     box-shadow: 2px 2px 2px #02010a;
 }
-/* --------------------------------------------------------------------- */
-/*  Sección para las Imagenes Secundarias de la Página             */
-/* --------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------------------
+Sección para las Imagenes Secundarias de la Página
+---------------------------------------------------------------------*/
+
 .ImagenSecundaria {
     width: 96%;
     height: 100%;
@@ -87,6 +95,7 @@ body {
     flex-flow: row;
     font-size: 2vw;
 }
+
 .ImagenSecundaria1, .ImagenSecundaria2 {
     background-color: #d5c75f;
     display: inline-block;
@@ -101,6 +110,7 @@ body {
     height: inherit;
     border-radius: 10px;
 }
+
 .ImagenSecundaria2 {
     margin: 2%;
     height: inherit;
@@ -114,6 +124,7 @@ body {
     text-align: center;
     box-shadow: 2px 2px 2px #02010a;
 }
+
 .ImagenSecundaria1 img:hover {
     transform: rotate(10deg);
 }
@@ -125,29 +136,35 @@ body {
     text-align: center;
     box-shadow: 2px 2px 2px #02010a;
 }
+
 .ImagenSecundaria2 img:hover {
     transform: translate(5px, -20px);
 }
+
+
 /**********************************************************************
 Controles para el Cuerpo o Contenido de la Página  Paisajes
 **********************************************************************/
+
+
 /*---------------------------------------------------------------------
 Sección para las Imagenes de la Filas 1 y 2
 ---------------------------------------------------------------------*/
+
 .ImagenesFila_1 {
     background-color: #82c3a6;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
     width: 100%;
     text-align: center;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     font-size: 2vw;
     display: inline-block;
 }
+
 .ImagenesFila_2 {
     background-color: #82c3a6;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
+    border-radius: 10px;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
@@ -156,6 +173,11 @@ Sección para las Imagenes de la Filas 1 y 2
     font-size: 2vw;
     display: inline-block;
 }
+
+
+/*---------------------------------------------------------------------
+Sección para las Imagenes de Paisajes
+---------------------------------------------------------------------*/
 
 .ImagenPaisaje_1, .ImagenPaisaje_2, .ImagenPaisaje_3 {
     background-color: #d5c75f;
@@ -166,6 +188,7 @@ Sección para las Imagenes de la Filas 1 y 2
     border: 2px solid;
     text-align: center;
 }
+
 .ImagenPaisaje_4, .ImagenPaisaje_5, .ImagenPaisaje_6 {
     background-color: #d5c75f;
     display: inline-block;
@@ -183,6 +206,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     align-items: center;
 }
+
 .ImagenPaisaje_2 img {
     width: 96%;
     border-radius: 10px;
@@ -190,6 +214,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     align-items: center;
 }
+
 .ImagenPaisaje_3 img {
     width: 96%;
     border-radius: 10px;
@@ -197,6 +222,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     align-items: center;
 }
+
 .ImagenPaisaje_4 img {
     width: 96%;
     border-radius: 10px;
@@ -204,6 +230,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     align-items: center;
 }
+
 .ImagenPaisaje_5 img {
     width: 96%;
     border-radius: 10px;
@@ -211,6 +238,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     align-items: center;
 }
+
 .ImagenPaisaje_6 img {
     width: 96%;
     border-radius: 10px;
@@ -228,6 +256,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     order: 1;
 }
+
 .ImagenPaisaje_2 div {
     margin: 2%;
     min-width: 200px;
@@ -237,6 +266,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     order: 2;
 }
+
 .ImagenPaisaje_3 div {
     margin: 3%;
     min-width: 200px;
@@ -246,6 +276,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     order: 3;
 }
+
 .ImagenPaisaje_4 div {
     margin: 3%;
     min-width: 200px;
@@ -255,6 +286,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     order: 1;
 }
+
 .ImagenPaisaje_5 div {
     margin: 2%;
     min-width: 200px;
@@ -264,6 +296,7 @@ Sección para las Imagenes de la Filas 1 y 2
     box-shadow: 2px 2px 2px #02010a;
     order: 2;
 }
+
 .ImagenPaisaje_6 div {
     margin: 3%;
     min-width: 200px;
@@ -274,114 +307,264 @@ Sección para las Imagenes de la Filas 1 y 2
     order: 3;
 }
 
-/*.ImagenPaisaje_1 {
-	-webkit-filter: blur(30px);
-	filter: blur(30px);
-}*/
-/*.ImagenSecundaria1 img:hover {
-    transform: rotate(10deg);
-}*/
+.ImagenPaisaje_1 {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.ImagenPaisaje_2, .ImagenPaisaje_4, .ImagenPaisaje_6 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.ImagenPaisaje_3 {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+
+/*---------------------------------------------------------------------
+Sección para las Imagenes de Fotos
+---------------------------------------------------------------------*/
+
+.ImagenFotos_1, .ImagenFotos_2, .ImagenFotos_3 {
+    background-color: #d5c75f;
+    display: inline-block;
+    padding: 1%;
+    width: 30%;
+    margin: 5vh 0;
+    border: 2px solid;
+    text-align: center;
+}
+
+.ImagenFotos_4, .ImagenFotos_5, .ImagenFotos_6 {
+    background-color: #d5c75f;
+    display: inline-block;
+    padding: 1%;
+    width: 30%;
+    margin: 5vh 0;
+    border: 2px solid;
+    text-align: center;
+}
+
+.ImagenFotos_1 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
+}
+
+.ImagenFotos_2 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
+}
+
+.ImagenFotos_3 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
+}
+
+.ImagenFotos_4 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
+}
+
+.ImagenFotos_5 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
+}
+
+.ImagenFotos_6 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
+}
+
+.ImagenFotos_1 div {
+    margin: 3%;
+    min-width: 200px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    order: 1;
+}
+
+.ImagenFotos_2 div {
+    margin: 2%;
+    min-width: 200px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    order: 2;
+}
+
+.ImagenFotos_3 div {
+    margin: 3%;
+    min-width: 200px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    order: 3;
+}
+
+.ImagenFotos_4 div {
+    margin: 3%;
+    min-width: 200px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    order: 1;
+}
+
+.ImagenFotos_5 div {
+    margin: 2%;
+    min-width: 200px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    order: 2;
+}
+
+.ImagenFotos_6 div {
+    margin: 3%;
+    min-width: 200px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    order: 3;
+}
+
+.ImagenFotos_1 {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.ImagenFotos_2, .ImagenFotos_4, .ImagenFotos_6 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.ImagenFotos_3 {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+
 /**********************************************************************
 Controles para el Pie de Página - Footer
 **********************************************************************/
+
 .PiePagina {
     width: 100%;
     border-top: solid 2px black;
     background-color: #C6d5c5;
     border-radius: 0px 0px 10px 10px;
-    font-size: 0.6em;
+    font-size: 1em;
     font-style: oblique;
     font-weight: bold;
     display: flex;
     flex-flow: row wrap;
 }
+
 .PiePagina footer {
     clear: both;
-    margin-top: 0.5vh;
+    margin-top: 1vh;
     bottom: 0;
     text-align: center;
 }
+
+.PiePagina h2 {
+    font-weight: bold;
+    color: green;
+}
+
 .PiePagina a:hover {
     color: red;
 }
 
+
 /*---------------------------------------------------------------------
 Sección para Controlar las Columnas del Pie de Página
 ---------------------------------------------------------------------*/
-.PiePag1 {
+
+.PiePag1, .PiePag2, .PiePag3, .PiePag4 {
     min-height: inherit;
-    width: 40%;
+    padding: 1%;
+    width: 23%;
+}
+
+.PiePag1 {
     border-radius: 0px 0px 0px 10px;
 }
-.PiePag2 {
-    min-height: inherit;
-    width: 20%;
-}
-.PiePag3 {
-    min-height: inherit;
-    width: 20%;
-}
+
 .PiePag4 {
-    min-height: inherit;
-    width: 20%;
     border-radius: 0px 0px 10px 0px;
+}
+
+.PiePag3 img {
+    width: 5%;
 }
 
 
 /**********************************************************************
 Controles para ajustar la apariencia para Équipos de menos de 900px
 **********************************************************************/
-/* @media screen (min-device-width: 320px) and (max-width: 900px)  */
-@media (min-width: 480px) and (max-width: 900px) {
-    body {
-        background-color: blue;
-    }
-    .contenedor {
-        font-size: 1.5em;
-    }
-    .PiePagina {
-        width: 100%;
-    }
+
+@media (max-width: 900px) {
+
+     .PiePag1, .PiePag2, .PiePag3, .PiePag4 {
+         width: 100%;
+     }
     .PiePag1 {
         width: 100%;
         border-radius: 0px;
     }
-    .PiePag2 {
-        width: 100%;
-    }
-    .PiePag3 {
-        width: 100%;
-    }
-    .PiePag4 {
+    .PiePag2, .PiePag3, .PiePag4 {
         width: 100%;
         border-radius: 0px 0px 10px 10px;
+    }
+    .PiePag3 img {
+        width: 2%;
     }
 }
 
 
-/*@media screen and (min-width: 480px) {
-    .PiePagina {
-        flex-flow: row wrap;
-        background-color: red;
-        width: 100%;
-        font-size: 0.6em;
-    }
-    .PiePaginaCol1, .PiePaginaCol2, .PiePaginaCol3, .PiePaginaCol4 {
-        font-size: .6em;
-    }
-}*/
+/**********************************************************************
+Controles para ajustar la apariencia para Équipos de más de 900px
+**********************************************************************/
 
-
-/*@media screen and (min-width: 960px) {
-    .PiePagina {
-         display: flex;
-        flex-flow:  column wrap;
-        background-color: blue;
-        width: 100%;
-        font-size: 0.6em;
+@media (min-width: 901px) {
+.PiePag1, .PiePag2, .PiePag3, .PiePag4 {
+    width: 23%;
+}
+    .PiePag1 {
+        border-radius: 0px 0px 0px 10px;
     }
-    .PiePaginaCol1, .PiePaginaCol2, .PiePaginaCol3, .PiePaginaCol4 {
-        font-size: .6em;
-        width: 25%;
+    .PiePag4 {
+        border-radius: 0px 0px 10px 0px;
     }
-}*/
+    .PiePag3 img {
+        width: 10%;
+    }
+}
