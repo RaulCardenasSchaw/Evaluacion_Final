@@ -2,8 +2,14 @@
 Controles Generales para la Página - Body
 **********************************************************************/
 
+@font-face{
+     font-family: 'DancingScript';
+     src: url('../fuentes/DancingScript.otf');
+}
+
 body {
-    font-family: "Dancing Script";
+    font-family: DancingScript;
+    font-weight: bold;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #02010a;
@@ -31,11 +37,11 @@ Controles para el Encabezado de la Página - Header
     width: 100%;
     font-size: 5vw;
     text-shadow: 2px 2px #02010a;
-    /*-webkit-animation: Brinco 2s;
-    animation: Brinco 2s;*/
+    -webkit-animation: Brinco 2s;
+    animation: brinco 2s;
 }
 
-@-webkit-keyframes Brinco {
+@-webkit-keyframes brinco {
     0% {
         margin-top: 150%;
     }
