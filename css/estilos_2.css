@@ -2,9 +2,9 @@
 Controles Generales para la Página - Body
 **********************************************************************/
 
-@font-face{
-     font-family: 'DancingScript';
-     src: url('../fuentes/DancingScript.otf');
+@font-face {
+    font-family: 'DancingScript';
+    src: url('../fuentes/DancingScript.otf');
 }
 
 body {
@@ -336,7 +336,7 @@ Controles para ajustar la apariencia para Équipos de menos de 900px - Movil
 
 
 /**********************************************************************
-Controles para ajustar la apariencia para Équipos de más de 900px
+Controles para ajustar la apariencia para Équipos de más de 900px - Desktop
 **********************************************************************/
 
 @media (min-width: 901px) {
