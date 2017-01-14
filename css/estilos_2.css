@@ -3,10 +3,10 @@ Controles Generales para la Página - Body
 **********************************************************************/
 
 body {
-    font-family: Dancing Script;
+    font-family: "Dancing Script";
     border: 2px solid black;
     border-radius: 10px;
-    background-color: #5b7989;
+    background-color: #02010a;
 }
 
 .Contenido {
@@ -31,10 +31,25 @@ Controles para el Encabezado de la Página - Header
     width: 100%;
     font-size: 5vw;
     text-shadow: 2px 2px #02010a;
+    /*-webkit-animation: Brinco 2s;
+    animation: Brinco 2s;*/
+}
+
+@-webkit-keyframes Brinco {
+    0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
 }
 
 .Cabecera nav {
     margin-right: 2%;
+    margin-bottom: 3%;
     font-size: 2.5vw;
     text-align: right;
     vertical-align: top;
@@ -63,17 +78,14 @@ Sección para la Imagen Central de la Página
 
 .ImagenCentral {
     background-color: #82c3a6;
-    border-radius: 10px;
-    margin-left: 25%;
-    width: 50%;
+    width: 100%;
+    font-size: 3vw;
     text-align: center;
-    border: 1px solid black;
-    font-size: 2vw;
 }
 
 .ImagenCentral img {
-    margin: 2%;
-    width: 96%;
+    margin: 5% 25% 0 25%;
+    width: 50%;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 2px 2px 2px #02010a;
@@ -81,60 +93,34 @@ Sección para la Imagen Central de la Página
 
 
 /*---------------------------------------------------------------------
-Sección para las Imagenes Secundarias de la Página
+Sección para las Imagenes Secundarias de la Página Principal
 ---------------------------------------------------------------------*/
 
 .ImagenSecundaria {
-    width: 96%;
-    height: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: inline-flex;
+    background-color: #d5c75f;
+    display: flex;
     flex-flow: row;
-    font-size: 2vw;
+    border: 1px;
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
 }
 
 .ImagenSecundaria1, .ImagenSecundaria2 {
-    background-color: #d5c75f;
-    display: inline-block;
-    width: 50%;
-    margin: 5vh 0;
-    border: 2px solid;
-    text-align: center;
-}
-
-.ImagenSecundaria1 {
-    margin: 2%;
+    width: 100%;
+    margin: 2% 2% 0% 2%;
     height: inherit;
-    border-radius: 10px;
 }
 
-.ImagenSecundaria2 {
-    margin: 2%;
-    height: inherit;
-    border-radius: 10px;
-}
-
-.ImagenSecundaria1 img {
+.ImagenSecundaria1 img, .ImagenSecundaria2 img {
     margin: 2%;
     width: 96%;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 2px 2px 2px #02010a;
+    box-shadow: 2px 2px 2px #82c3a6;
 }
 
 .ImagenSecundaria1 img:hover {
     transform: rotate(10deg);
-}
-
-.ImagenSecundaria2 img {
-    margin: 2%;
-    width: 96%;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 2px 2px 2px #02010a;
 }
 
 .ImagenSecundaria2 img:hover {
@@ -151,25 +137,10 @@ Controles para el Cuerpo o Contenido de la Página  Paisajes
 Sección para las Imagenes de la Filas 1 y 2
 ---------------------------------------------------------------------*/
 
-.ImagenesFila_1 {
+.ImagenesFila_1, .ImagenesFila_2 {
     background-color: #82c3a6;
-    border-radius: 10px;
-    border: 1px solid black;
     width: 100%;
     text-align: center;
-    font-size: 2vw;
-    display: inline-block;
-}
-
-.ImagenesFila_2 {
-    background-color: #82c3a6;
-    border-radius: 10px;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     font-size: 2vw;
     display: inline-block;
 }
@@ -179,7 +150,7 @@ Sección para las Imagenes de la Filas 1 y 2
 Sección para las Imagenes de Paisajes
 ---------------------------------------------------------------------*/
 
-.ImagenPaisaje_1, .ImagenPaisaje_2, .ImagenPaisaje_3 {
+.ImagenPaisaje_1, .ImagenPaisaje_2, .ImagenPaisaje_3, .ImagenPaisaje_4, .ImagenPaisaje_5, .ImagenPaisaje_6 {
     background-color: #d5c75f;
     display: inline-block;
     padding: 1%;
@@ -189,135 +160,34 @@ Sección para las Imagenes de Paisajes
     text-align: center;
 }
 
-.ImagenPaisaje_4, .ImagenPaisaje_5, .ImagenPaisaje_6 {
-    background-color: #d5c75f;
-    display: inline-block;
-    padding: 1%;
-    width: 30%;
-    margin: 5vh 0;
-    border: 2px solid;
-    text-align: center;
+.ImagenPaisaje_1 div, .ImagenPaisaje_2 div, .ImagenPaisaje_3 div, .ImagenPaisaje_4 div, .ImagenPaisaje_5 div, .ImagenPaisaje_6 div {
+    min-width: 200px;
+    height: 30%;
+    margin: 3%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+.ImagenPaisaje_1 img, .ImagenPaisaje_2 img, .ImagenPaisaje_3 img, .ImagenPaisaje_4 img, .ImagenPaisaje_5 img, .ImagenPaisaje_6 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
 }
 
 .ImagenPaisaje_1 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenPaisaje_2 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenPaisaje_3 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenPaisaje_4 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenPaisaje_5 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenPaisaje_6 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenPaisaje_1 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 1;
-}
-
-.ImagenPaisaje_2 div {
-    margin: 2%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 2;
-}
-
-.ImagenPaisaje_3 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 3;
-}
-
-.ImagenPaisaje_4 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 1;
-}
-
-.ImagenPaisaje_5 div {
-    margin: 2%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 2;
-}
-
-.ImagenPaisaje_6 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 3;
-}
-
-.ImagenPaisaje_1 {
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
 
-.ImagenPaisaje_2, .ImagenPaisaje_4, .ImagenPaisaje_6 {
+.ImagenPaisaje_2 img, .ImagenPaisaje_4 img, .ImagenPaisaje_6 img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-.ImagenPaisaje_3 {
+.ImagenPaisaje_3 img {
     -webkit-filter: sepia(90%);
     filter: sepia(90%);
 }
@@ -327,7 +197,7 @@ Sección para las Imagenes de Paisajes
 Sección para las Imagenes de Fotos
 ---------------------------------------------------------------------*/
 
-.ImagenFotos_1, .ImagenFotos_2, .ImagenFotos_3 {
+.ImagenFotos_1, .ImagenFotos_2, .ImagenFotos_3, .ImagenFotos_4, .ImagenFotos_5, .ImagenFotos_6 {
     background-color: #d5c75f;
     display: inline-block;
     padding: 1%;
@@ -337,135 +207,34 @@ Sección para las Imagenes de Fotos
     text-align: center;
 }
 
-.ImagenFotos_4, .ImagenFotos_5, .ImagenFotos_6 {
-    background-color: #d5c75f;
-    display: inline-block;
-    padding: 1%;
-    width: 30%;
-    margin: 5vh 0;
-    border: 2px solid;
-    text-align: center;
+.ImagenFotos_1 div, .ImagenFotos_2 div, .ImagenFotos_3 div, .ImagenFotos_4 div, .ImagenFotos_5 div, .ImagenFotos_6 div {
+    min-width: 200px;
+    height: 30%;
+    margin: 3%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+.ImagenFotos_1 img, .ImagenFotos_2 img, .ImagenFotos_3 img, .ImagenFotos_4 img, .ImagenFotos_5 img, .ImagenFotos_6 img {
+    width: 96%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #02010a;
+    align-items: center;
 }
 
 .ImagenFotos_1 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenFotos_2 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenFotos_3 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenFotos_4 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenFotos_5 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenFotos_6 img {
-    width: 96%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    align-items: center;
-}
-
-.ImagenFotos_1 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 1;
-}
-
-.ImagenFotos_2 div {
-    margin: 2%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 2;
-}
-
-.ImagenFotos_3 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 3;
-}
-
-.ImagenFotos_4 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 1;
-}
-
-.ImagenFotos_5 div {
-    margin: 2%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 2;
-}
-
-.ImagenFotos_6 div {
-    margin: 3%;
-    min-width: 200px;
-    height: 30%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #02010a;
-    order: 3;
-}
-
-.ImagenFotos_1 {
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
 
-.ImagenFotos_2, .ImagenFotos_4, .ImagenFotos_6 {
+.ImagenFotos_2 img, .ImagenFotos_4 img, .ImagenFotos_6 img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-.ImagenFotos_3 {
+.ImagenFotos_3 img {
     -webkit-filter: sepia(90%);
     filter: sepia(90%);
 }
@@ -476,15 +245,15 @@ Controles para el Pie de Página - Footer
 **********************************************************************/
 
 .PiePagina {
+    display: flex;
+    flex-flow: row wrap;
     width: 100%;
-    border-top: solid 2px black;
-    background-color: #C6d5c5;
-    border-radius: 0px 0px 10px 10px;
     font-size: 1em;
     font-style: oblique;
     font-weight: bold;
-    display: flex;
-    flex-flow: row wrap;
+    border-top: solid 2px black;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #C6d5c5;
 }
 
 .PiePagina footer {
@@ -492,6 +261,7 @@ Controles para el Pie de Página - Footer
     margin-top: 1vh;
     bottom: 0;
     text-align: center;
+    vertical-align: middle;
 }
 
 .PiePagina h2 {
@@ -514,35 +284,44 @@ Sección para Controlar las Columnas del Pie de Página
     width: 23%;
 }
 
-.PiePag1 {
-    border-radius: 0px 0px 0px 10px;
-}
-
-.PiePag4 {
-    border-radius: 0px 0px 10px 0px;
-}
-
 .PiePag3 img {
-    width: 5%;
+    width: 15%;
 }
 
 
-/**********************************************************************
-Controles para ajustar la apariencia para Équipos de menos de 900px
-**********************************************************************/
+/*********************************************************************************
+Controles para ajustar la apariencia para Équipos de menos de 900px - Movil
+*********************************************************************************/
 
-@media (max-width: 900px) {
-
-     .PiePag1, .PiePag2, .PiePag3, .PiePag4 {
-         width: 100%;
-     }
-    .PiePag1 {
-        width: 100%;
-        border-radius: 0px;
+@media (max-width: 899px) {
+    .Cabecera nav {
+        text-align: center;
     }
-    .PiePag2, .PiePag3, .PiePag4 {
+    .ImagenCentral, .ImagenSecundaria1, .ImagenSecundaria2, .ImagenFotos_1, .ImagenFotos_2, .ImagenFotos_3, .ImagenFotos_4, .ImagenFotos_5, .ImagenFotos_6, .ImagenPaisaje_1, .ImagenPaisaje_2, .ImagenPaisaje_3, .ImagenPaisaje_4, .ImagenPaisaje_5, .ImagenPaisaje_6 {
         width: 100%;
-        border-radius: 0px 0px 10px 10px;
+        margin: 0;
+        font-size: 4vw;
+        border-radius: 0px;
+        border: 0px;
+        padding: 0;
+    }
+    .ImagenSecundaria, .ImagenesFila_1, .ImagenesFila_2 {
+        width: 100%;
+        margin: 0;
+        display: block;
+        border-radius: 0px;
+        border: 0px;
+    }
+    .ImagenCentral img, .ImagenSecundaria1 img, .ImagenSecundaria2 img, .ImagenFotos_1 img, .ImagenFotos_2 img, .ImagenFotos_3 img, .ImagenFotos_4 img, .ImagenFotos_5 img, .ImagenFotos_6 img, .ImagenPaisaje_1 img, .ImagenPaisaje_2 img, .ImagenPaisaje_3 img, .ImagenPaisaje_4 img, .ImagenPaisaje_5 img, .ImagenPaisaje_6 img {
+        margin: 5% 5% 0 5%;
+        width: 90%;
+    }
+    /*-------------------------------------------------------------------*/
+    .PiePag1, .PiePag2, .PiePag3, .PiePag4 {
+        width: 100%;
+    }
+    .PiePag1 {
+        border-radius: 0px;
     }
     .PiePag3 img {
         width: 2%;
@@ -555,9 +334,9 @@ Controles para ajustar la apariencia para Équipos de más de 900px
 **********************************************************************/
 
 @media (min-width: 901px) {
-.PiePag1, .PiePag2, .PiePag3, .PiePag4 {
-    width: 23%;
-}
+    .PiePag1, .PiePag2, .PiePag3, .PiePag4 {
+        width: 23%;
+    }
     .PiePag1 {
         border-radius: 0px 0px 0px 10px;
     }
