@@ -1,7 +1,6 @@
 /**********************************************************************
 Controles Generales para la Página - Body
 **********************************************************************/
-
 @font-face {
     font-family: 'DancingScript';
     src: url('../fuentes/DancingScript.otf');
@@ -19,11 +18,9 @@ body {
     width: 100%;
 }
 
-
 /**********************************************************************
 Controles para el Encabezado de la Página - Header
 **********************************************************************/
-
 .Cabecera {
     width: 100%;
     color: white;
@@ -42,15 +39,9 @@ Controles para el Encabezado de la Página - Header
 }
 
 @-webkit-keyframes brinco {
-    0% {
-        margin-top: 150%;
-    }
-    60% {
-        margin-top: -5%;
-    }
-    100% {
-        margin-top: 0%;
-    }
+        0% { margin-top: 150%;  }
+      60% { margin-top: -5%;    }
+    100% { margin-top: 0%;     }
 }
 
 .Cabecera nav {
@@ -69,19 +60,15 @@ Controles para el Encabezado de la Página - Header
 .Cabecera a:link {
     text-decoration: none;
     font-weight: bold;
-    color: green;
 }
-
 
 /**********************************************************************
 Controles para el Cuerpo o Contenido de la Página
 **********************************************************************/
 
-
 /*---------------------------------------------------------------------
 Sección para la Imagen Central de la Página
 ---------------------------------------------------------------------*/
-
 .ImagenCentral {
     background-color: #82c3a6;
     width: 100%;
@@ -97,11 +84,9 @@ Sección para la Imagen Central de la Página
     box-shadow: 2px 2px 2px #02010a;
 }
 
-
 /*---------------------------------------------------------------------
 Sección para las Imagenes Secundarias de la Página Principal
 ---------------------------------------------------------------------*/
-
 .ImagenSecundaria {
     background-color: #d5c75f;
     display: flex;
@@ -133,43 +118,35 @@ Sección para las Imagenes Secundarias de la Página Principal
     transform: translate(5px, -20px);
 }
 
-
 /**********************************************************************
 Controles para el Cuerpo o Contenido de la Página  Paisajes
 **********************************************************************/
 
-
 /*---------------------------------------------------------------------
 Sección para las Imagenes de la Filas 1 y 2
 ---------------------------------------------------------------------*/
-
 .ImagenesFila_1, .ImagenesFila_2 {
-    background-color: #82c3a6;
+    background-color: #d5c75f;
     width: 100%;
-    text-align: center;
     font-size: 2vw;
-    display: inline-block;
+    display: flex;
+    flex-flow: row;
 }
-
 
 /*---------------------------------------------------------------------
 Sección para las Imagenes de Paisajes
 ---------------------------------------------------------------------*/
-
 .ImagenPaisaje_1, .ImagenPaisaje_2, .ImagenPaisaje_3, .ImagenPaisaje_4, .ImagenPaisaje_5, .ImagenPaisaje_6 {
     background-color: #d5c75f;
     display: inline-block;
-    padding: 1%;
-    width: 30%;
-    margin: 5vh 0;
-    border: 2px solid;
+    padding: 2%;
+    width: 100%;
     text-align: center;
 }
 
 .ImagenPaisaje_1 div, .ImagenPaisaje_2 div, .ImagenPaisaje_3 div, .ImagenPaisaje_4 div, .ImagenPaisaje_5 div, .ImagenPaisaje_6 div {
     min-width: 200px;
-    height: 30%;
-    margin: 3%;
+    height: 40%;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 2px 2px 2px #02010a;
@@ -198,25 +175,20 @@ Sección para las Imagenes de Paisajes
     filter: sepia(90%);
 }
 
-
 /*---------------------------------------------------------------------
 Sección para las Imagenes de Fotos
 ---------------------------------------------------------------------*/
-
 .ImagenFotos_1, .ImagenFotos_2, .ImagenFotos_3, .ImagenFotos_4, .ImagenFotos_5, .ImagenFotos_6 {
     background-color: #d5c75f;
     display: inline-block;
-    padding: 1%;
-    width: 30%;
-    margin: 5vh 0;
-    border: 2px solid;
+    padding: 2%;
+    width: 100%;
     text-align: center;
 }
 
 .ImagenFotos_1 div, .ImagenFotos_2 div, .ImagenFotos_3 div, .ImagenFotos_4 div, .ImagenFotos_5 div, .ImagenFotos_6 div {
     min-width: 200px;
-    height: 30%;
-    margin: 3%;
+    height: 40%;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 2px 2px 2px #02010a;
@@ -245,11 +217,9 @@ Sección para las Imagenes de Fotos
     filter: sepia(90%);
 }
 
-
 /**********************************************************************
 Controles para el Pie de Página - Footer
 **********************************************************************/
-
 .PiePagina {
     display: flex;
     flex-flow: row wrap;
@@ -279,11 +249,9 @@ Controles para el Pie de Página - Footer
     color: red;
 }
 
-
 /*---------------------------------------------------------------------
 Sección para Controlar las Columnas del Pie de Página
 ---------------------------------------------------------------------*/
-
 .PiePag1, .PiePag2, .PiePag3, .PiePag4 {
     min-height: inherit;
     padding: 1%;
@@ -291,14 +259,12 @@ Sección para Controlar las Columnas del Pie de Página
 }
 
 .PiePag3 img {
-    width: 15%;
+    width: 3vw;
 }
-
 
 /*********************************************************************************
 Controles para ajustar la apariencia para Équipos de menos de 900px - Movil
 *********************************************************************************/
-
 @media (max-width: 899px) {
     .Cabecera nav {
         text-align: center;
@@ -329,16 +295,11 @@ Controles para ajustar la apariencia para Équipos de menos de 900px - Movil
     .PiePag1 {
         border-radius: 0px;
     }
-    .PiePag3 img {
-        width: 2%;
-    }
 }
-
 
 /**********************************************************************
 Controles para ajustar la apariencia para Équipos de más de 900px - Desktop
 **********************************************************************/
-
 @media (min-width: 901px) {
     .PiePag1, .PiePag2, .PiePag3, .PiePag4 {
         width: 23%;
